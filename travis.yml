@@ -1,0 +1,10 @@
+language:java
+jdk: oraclejdk8
+
+script:
+ ./mvn clean compile verify package
+ 
+notifications:
+  slack:
+    on_success: always
+    
