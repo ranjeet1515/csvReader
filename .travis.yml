@@ -1,6 +1,6 @@
 language: java
 jdk: oraclejdk8
-script: mvn clean compile verify package
+script: mvn clean compile package -Dmaven.test.skip=true
 notifications:
   slack:
     on_success: always
